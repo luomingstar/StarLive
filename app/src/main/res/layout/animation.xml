@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/animation_person_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_39"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/dp_22"
+            android:background="@drawable/bg_giftlayout">
+
+            <ImageView
+                android:id="@+id/gift_userheader_iv"
+                android:layout_width="@dimen/dp_39"
+                android:layout_height="@dimen/dp_39"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ember" />
+
+            <TextView
+                android:id="@+id/gift_usernickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_toRightOf="@id/gift_userheader_iv"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:maxLines="1"
+                android:text="库日天"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gift_usersign_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gift_usernickname_tv"
+                android:layout_below="@id/gift_usernickname_tv"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:paddingRight="@dimen/dp_10"
+                android:text="送一个超级无敌"
+                android:textColor="#ffea79"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_50"
+                android:layout_toRightOf="@id/gift_usersign_tv" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/animation_gift"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_alignRight="@id/animation_person_rl" />
+
+
+        <ImageView
+            android:id="@+id/animation_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/animation_person_rl"
+            android:src="@drawable/light_star_anim" />
+
+
+        <com.a99live.zhibo.live.gift.StrokeTextView
+            android:id="@+id/animation_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_toRightOf="@+id/animation_person_rl"
+            android:text="x 1"
+            android:paddingLeft="@dimen/dp_5"
+            android:textColor="#fff000"
+            android:textSize="@dimen/sp_24"
+            app:innnerColor="#fcb103"
+            app:outerColor="#fff000" />
+    </RelativeLayout>
+</FrameLayout>

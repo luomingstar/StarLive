@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_focus_hint"
+        android:layout_marginTop="111dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:layout_height="117dp"
+        android:src="@mipmap/shouye_guanzhu_morentu"/>
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="338dp"
+        android:gravity="center"
+        android:text="@string/search_anchor"
+        android:textSize="18sp"
+        android:textColor="@color/gray"
+        android:background="@drawable/shape_search"/>
+
+</RelativeLayout>

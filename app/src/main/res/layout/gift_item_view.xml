@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <GridView
+        android:id="@+id/gift_item_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        >
+
+    </GridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="#33000000"
+        />
+    <View
+        android:layout_width="@dimen/dp_0.5"
+        android:layout_height="match_parent"
+        android:background="#33000000"
+        />
+</RelativeLayout>

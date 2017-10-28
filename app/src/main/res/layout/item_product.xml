@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_63"
+        android:gravity="center|left">
+
+        <ImageView
+            android:id="@+id/iv_zuanshi"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@mipmap/zuanshi" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_toRightOf="@id/iv_zuanshi"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:text="20" />
+
+        <TextView
+            android:id="@+id/tv_Presented"
+            android:layout_toRightOf="@id/tv_amount"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/text_999"
+            android:textSize="@dimen/sp_16"/>
+
+        <TextView
+            android:id="@+id/tv_new_user"
+            android:layout_toRightOf="@id/tv_Presented"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:visibility="gone"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:background="@drawable/xinren"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="@dimen/dp_82"
+            android:layout_height="@dimen/dp_27"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_account"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:gravity="center"
+            android:text="$1.00"
+            android:textColor="@color/text_5a5b"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/page" />
+
+</RelativeLayout>

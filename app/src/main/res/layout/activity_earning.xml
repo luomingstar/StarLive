@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/page"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/layout_title" layout="@layout/title"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_coin"
+            android:layout_marginTop="@dimen/dp_26"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_30"
+            android:textColor="@color/text_666"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appcoin"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_999"/>
+
+        <View
+            android:layout_marginTop="@dimen/dp_26"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/text_f9f4f5"/>
+
+        <TextView
+            android:id="@+id/tv_rmb"
+            android:layout_marginTop="@dimen/dp_26"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_30"
+            android:textColor="@color/text_5a5b"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_26"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red_packet"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_999"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_layout_binding"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:id="@+id/tv_withdraw_account"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="@string/withdraw_account"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_999"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/tv_withdraw_account"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_222"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_change_account"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/change_account"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_18" />
+
+        <TextView
+            android:id="@+id/tv_replace"
+            android:layout_toLeftOf="@id/iv_change_account"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="@string/change"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_999"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_get_rmb"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/shape_earning"
+        android:gravity="center"
+        android:text="@string/getRed"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/earning_hint"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/text_999"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/earning_hint2"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/text_999"/>
+
+</LinearLayout>

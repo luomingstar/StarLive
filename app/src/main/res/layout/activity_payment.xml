@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/layout_title" layout="@layout/title"/>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:id="@+id/way"
+            android:text="@string/pay_way"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_999"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_pay_way"
+            android:layout_toRightOf="@id/way"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/page" />
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:id="@+id/money"
+            android:text="@string/pay_money"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_999"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_toRightOf="@id/money"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/page" />
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:id="@+id/order"
+            android:text="@string/pay_order"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_999"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_toRightOf="@id/order"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_wexin_pay"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="@string/tv_pay_sure"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/text_5a5b"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_bt_normal"
+        android:layout_width="@dimen/dp_340"
+        android:layout_height="@dimen/dp_48" />
+
+</LinearLayout>

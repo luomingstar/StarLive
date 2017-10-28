@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\282ced8c430c5a8a24cda51edd92497b00c92ccb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_b894e4b4095719422b596f2753d1a7d8e1d9e4dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\SocialSDK_umengqq.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f1df3b198d15b2710703d69e73e9dc1d1872a280">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\SocialSDK_umengqq_3146f35bb20e1f2a4b048a605fd041d5e5c1793e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\tls_sdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c5362cce8b694aa3ae38a8376ffa707a145fb79">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\tls_sdk_05006adc865bdca3518edc036bd119a16278eb32\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\android-support-v8-renderscript.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="19d54695d29d5ca94dda30368a7df0b33ffc17d7">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\android-support-v8-renderscript_33be1208599f3a73573efab9ce249bc2dd7c6f9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\SocialSDK_WeiXin_2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1f39f774fbfa22020fdd4c65ef55de76fb1fedc9">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\SocialSDK_WeiXin_2_c55cb94d6a3a892b8b6611f99d65504c12e1ed03\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\incremental-runtime-classes\baidu\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10000\instant-run_4454bddfeaae774599c3a7c2a23aa2f2c4c7a1d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\umeng_social_netv6.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="69abb2fb920b6029fed3cd72944b87a12719e390">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\umeng_social_netv6.0.0_191cefe01f9f1cafef81940179d699ead32050ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\0e4b1ae907472e14a7d8e6908aa4afce3e03e85e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_6499bcdd51b280bd6aaf0961fea8cbb59d752492\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c2f29c05b35e8c8713be2b81c41cf18f98b64a">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\libammsdk_52e9b68443802fa1047302d381f5dde528bc43dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\895bcf0ec9df3c70e23406b043f00e10497c1a47\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_6c0f159e1ec37f9628f760e1adcd8fde587fe00a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\upload_1.1.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="34ebc28a2f1291997a6330e7606af80ccd7c3093">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\upload_1.1.4.1_e9f67d23149c0fe7f651c39901e74377d083a957\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\umeng_social_viewv6.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d1ea5163acc12e5d3c2bfcc9638d08b358416643">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\umeng_social_viewv6.0.0_4b275e4390c8fd80e3f6e8dbf539650be3ecf808\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\pldroid-player-1.5.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="074119feeee86a632d2e5e744444037986c29ab8">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\pldroid-player-1.5.1_dfcebd8e37a0916e81593c9fcad0051a62d2aae3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\SocialSDK_umengsina.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c530e58aae29fcf0af0ced1c7cce5f61dce80fc4">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\SocialSDK_umengsina_0fae676f87c1e43df5beeed16b77b962a6ac6de4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\soload.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75fac6d5abe785d6658b93e008f7ef77b3fcfdc0">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\soload_1089542f4439400ca43f642d89a4ae8ef5273683\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\fc293f74db12e74cdcff03d50d566a916ad4360b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_8ef57d1b8acd2a8a6afa871c8691ce4b21807507\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\SocialSDK_QQZone_3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e50d01b3eb89f645e7cb7cfcd3a7828ab565a1c">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\SocialSDK_QQZone_3_4c6de2c9ac0b11850bc77a4d36a4d19072b82fe6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\Xg_sdk_v2.46_20160602_1638.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="32985de9bccdafb52efeb6e1b55a25b45559f4c6">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\Xg_sdk_v2.46_20160602_1638_d071c0432af3ac9777d525e2e2d0a44003d22f5f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\wup-1.0.0-SNAPSHOT.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="934e220d321b27272ff107393ca45b56b5362fe4">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\wup-1.0.0-SNAPSHOT_395a577f470d9f0d611410ee6fa216642837cdb5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\ccfe33816646edb172b806a30e1240bd2962e5ef\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_dc3b4553e2f0fea4c5572b4ebe75df9d7286c80c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\jg_filter_sdk_1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ebfc3cde0309ff27e9568757784eefefc71407a2">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\jg_filter_sdk_1.1_fa400072117782e4a53217ba165f73ba40b87cf2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\41b283afd774e06cb981c4f92eb0acc740def2e0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_c82448420944f4cc188e30f0ab7b9e8709dd9abd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\sdk-v1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e2ce3786b6e9519934c4a54aaaaf39525bf4486c">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\sdk-v1.0.0_0b701803c317e7fd3139e7ed6f87746b9e845f6e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\ef4693d5584ba3c09c72b52e55381f787b403371\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_3cc99568942a6e7eefffbe691273e853a9bbe92e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\imsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd6607148200424e2efbbff8b690bd3bb7f9d8af">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\imsdk_9ab0e3a8e1857d28d440294f029b209f82628998\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\qalsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1f14cd999cb28b253531a3a29aabb76df03f60cc">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\qalsdk_3af6ffcbd25011adf4f4562f021cf1304e18a73a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\bugly_1.3.0_imsdk_release.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="21904f398a294a014c7a5611cb58d7eeb49e056b">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\bugly_1.3.0_imsdk_release_af13519750d07e801c0c70ee63e5877dfbd4ff7d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\umeng_social_apiv6.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="484b8ac4d21231e996df8012c4fbb8d5cf3c3c19">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\umeng_social_apiv6.0.0_2176d95239dd55ddd88a1b09c83ae12700cd15cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\bae03125349199a209a1a4054c7740376b2216b2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_4b1f45cedfed74450157cb3a6970bb732535ae52\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\download_1.1.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ae90c951846b3f2d5a8847d1afb8b03fe9030e95">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\download_1.1.4.1_88d510015bf9e39eca4f574193a1d6547c0248bb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\a0e497bc8a22fb32858913b7ea31511d4e6a0812\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_20b2a833db1899741d629900ebb6694ae3ec6645\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\multiwindow-v1.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0d00f02d831de56a005f13eb0d19b34b4335a77f">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\multiwindow-v1.3.2_29b496be8c90f815afee0b7ced3c9feccbd40802\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\mobilepb.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a5e62566e5023a4497edcb883324e82771c8c9fb">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\mobilepb_918cd65a9d105df8f17a27f7e26fb5da0400e8d4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\f12ac825b952d9727886aff9d73a130adca8beed\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_b156fa3d9f2de981df421eb07d698393db6e3523\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\2c44eaef59315d3d0bfe2176c02d47ed1a43b957\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_77f6568c9d27098a51bb561ccb44c37689966abb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\txrtmpsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="71df303683342f5e8b70d6c6eb5dbe0bbd8f338f">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\txrtmpsdk_a30519d3765443d9f71e5983d6cae01f428ac8fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\libs\umeng-onlineconfig_v1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="716926f94af2f74098d6579fcd72462ad4773c73">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\2\umeng-onlineconfig_v1.0.0_cba37c609db8d936f2627230db50d7bbaa37f394\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\a06eee0a6cf3dacd1531e7f021918a05dcde693c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_1fc9748242168c04bb039a2ee39f74dec84293f9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\JJGCW\.android\build-cache\1aff2920fa13974cf74ac8c3efdf3f235ab94bfc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10\classes_e67a774ad3f6a07bdfdd5d0682afd0ea8d45967f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\incremental-classes\baidu\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e23b51bc75167562473e7cbbb1b594dc2f61496a">
+        <dex dex="C:\android\liveapp\trunk\src\99Live\app\build\intermediates\transforms\dex\baidu\debug\folders\1000\10000\instant-run-bootstrap_275426f3763e77555a0ece4f796bd2d9c25b2252\classes.dex" />
+    </item>
+
+</items>

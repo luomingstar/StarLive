@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="dfm-0.4.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/1f928991126b0b1174ee558b43fdce92146c30c0/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/1f928991126b0b1174ee558b43fdce92146c30c0/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ctiao/dfm/0.4.4/d6dda77980ccf9550224db1a03dd7a1da8b4e5e3/dfm-0.4.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

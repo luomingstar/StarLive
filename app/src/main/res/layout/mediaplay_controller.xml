@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/out"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:clickable="true"
+        >
+
+        <ImageButton
+            android:id="@+id/startPause"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/play_pause2"
+            android:layout_marginLeft="@dimen/dp_3"
+            />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:paddingLeft="@dimen/dp_8"
+            android:maxHeight="1.0dip"
+            android:minHeight="1.0dip"
+            android:layout_gravity="center_vertical"
+            android:progressDrawable="@drawable/play_seekbar_progress"
+            android:thumb="@drawable/vod_seekbar"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_9"
+        >
+        <TextView
+            android:id="@+id/seek_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:shadowColor="@color/text_222"
+            android:textColor="@color/white"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            />
+
+        <TextView
+            android:id="@+id/seek_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/00:00:00"
+            android:textColor="@color/white"
+            android:shadowColor="@color/text_222"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            />
+
+    </LinearLayout>
+</FrameLayout>

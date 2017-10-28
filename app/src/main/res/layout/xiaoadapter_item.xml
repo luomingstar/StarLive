@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/dp_132">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_132"
+        android:background="@color/color_f1f1f1"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_8"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_94" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_below="@+id/img"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_47"
+                android:textColor="#363636"
+                android:text="name"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sp_10"
+                />
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/dp_5"
+                android:gravity="center_vertical"
+                >
+                
+                <ImageView
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="@dimen/dp_10"
+                    android:src="@drawable/xvideo_list_like"
+                    />
+
+                <TextView
+                    android:id="@+id/likeNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_10"
+                    android:text="1000"
+                    android:textColor="#999999"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    />
+                
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+        <com.a99live.zhibo.live.view.weight.NewCircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/head"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:scaleType="centerCrop"
+            app:border_color="#FFF"
+            app:border_width="0dp"
+            android:src="@mipmap/logo_head"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_5"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

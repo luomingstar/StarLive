@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.a99live.zhibo.live.view.weight.NewCircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/head"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:scaleType="centerCrop"
+        app:border_color="#FFF"
+        app:border_width="0dp"
+        android:src="@mipmap/logo_head"
+        android:layout_margin="@dimen/dp_10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/head"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_10"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nickname"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#333333"
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:textSize="@dimen/sp_10"
+                android:textColor="#959595"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_10"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/centent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="content"
+            android:layout_marginTop="@dimen/dp_2"
+            android:textColor="#959595"
+            android:textSize="@dimen/sp_12"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            android:background="#dedede"
+            android:layout_marginTop="@dimen/dp_5"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

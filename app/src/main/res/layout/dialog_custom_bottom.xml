@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_20"
+    android:gravity="bottom"
+    >
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/shape_dialog_item"
+        />
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/shape_dialog_item"
+        android:layout_marginTop="@dimen/dp_5"
+        />
+
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/shape_dialog_item"
+        android:layout_marginTop="@dimen/dp_5"
+        />
+
+    <TextView
+        android:id="@+id/cancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="@color/red_theme"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/shape_dialog_item"
+        android:layout_marginTop="@dimen/dp_20"
+        />
+
+</LinearLayout>

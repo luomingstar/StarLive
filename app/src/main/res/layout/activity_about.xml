@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/layout_title" layout="@layout/title"/>
+
+    <TextView
+        android:id="@+id/tv_about_live"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginTop="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_44"
+        android:text="@string/about_live"
+        android:textSize="@dimen/sp_17"
+        android:textColor="@color/text_5a5b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_alignLeft="@+id/tv_about_live"
+        android:layout_below="@+id/tv_about_live"
+        android:layout_marginTop="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line" />
+
+    <ScrollView
+        android:layout_below="@+id/view_line"
+        android:layout_alignLeft="@id/tv_about_live"
+        android:layout_marginRight="@dimen/dp_40"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_about_detail"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/text_666"
+            android:lineSpacingExtra="@dimen/dp_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+</RelativeLayout>

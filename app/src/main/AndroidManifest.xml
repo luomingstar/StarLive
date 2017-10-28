@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.a99live.zhibo.live">
+
+    <!-- 位置权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序通过WiFi或移动基站的方式获取用户错略的经纬度信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 允许程序通过GPS芯片接收卫星的定位信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 存储权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 麦克风权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 信鸽 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 信鸽可选权限 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <!-- 【必须】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <!-- 友盟权限 -->
+    <!-- 允许程序读取系统底层日志 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 允许程序获取任务信息 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 允许程序设置调试程序 -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <!-- 允许程序显示系统窗口 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许程序访问账户Gmail列表 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 允许程序请求验证从AccountManager -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 允许程序管理AccountManager中的账户列表 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 允许程序修改全局音频设置 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- 允许程序在手机屏幕关闭后后台进程仍然运行 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 允许程序挂载、反挂载外部文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 三星应用市场提交专用权限 -->
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+
+    <!--七牛播放器权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="com.a99live.zhibo.live.fileProvider"
+        android:grantUriPermissions="true"
+        android:exported="false">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+    </provider>
+    -->
+    <application
+        android:name=".LiveZhiBoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeMy">
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/welcome">
+
+            <!-- 要想在别的App上能成功调起App，必须添加intent过滤器 -->
+            <intent-filter>
+
+                <!-- 协议部分，随便设置 -->
+                <data android:scheme="open-99live" />
+                <!-- 下面这几行也必须得设置 -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx8af34fd3de90a8f9" />
+            </intent-filter>
+        </activity>
+        <!-- 引导页 -->
+        <activity
+            android:name=".activity.WelcomeGuideActivity"
+            android:screenOrientation="portrait" />
+        <!-- 主界面 -->
+        <activity
+            android:name=".activity.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 推荐主播界面 -->
+        <activity
+            android:name=".activity.RecommendAnchorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTranslucentTheme" />
+        <!-- 兴趣标签界面 -->
+        <activity
+            android:name=".activity.InterestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTranslucentTheme" />
+        <!-- 登录界面 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 设置昵称界面 -->
+        <activity
+            android:name=".activity.SetNameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 发起直播界面 -->
+        <activity
+            android:name=".activity.LivePushSetActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 编辑用户信息界面 -->
+        <activity
+            android:name=".activity.user.UserInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 昵称界面 -->
+        <activity
+            android:name=".activity.user.NickNameActivity"
+            android:screenOrientation="portrait" />
+        <!-- 个人签名界面 -->
+        <activity
+            android:name=".activity.user.SingleMottoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置界面 -->
+        <activity
+            android:name=".activity.setting.SetActivity"
+            android:screenOrientation="portrait" />
+        <!-- 他人主界面 -->
+        <activity
+            android:name=".activity.OtherHomeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 联系我们界面 -->
+        <activity
+            android:name=".activity.setting.TelMeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 反馈界面 -->
+        <activity
+            android:name=".activity.setting.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关于我们界面 -->
+        <activity
+            android:name=".activity.setting.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用户协议界面 -->
+        <activity
+            android:name=".activity.setting.UserAgreementActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的关注界面 -->
+        <activity
+            android:name=".activity.user.AttentionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的粉丝界面 -->
+        <activity
+            android:name=".activity.user.FansActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的直播界面 -->
+        <activity
+            android:name=".activity.user.MyLiveActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的收益界面 -->
+        <activity
+            android:name=".activity.user.EarnActivity"
+            android:screenOrientation="portrait" />
+        <!-- 绑定账户页 -->
+        <activity
+            android:name=".activity.user.BindingAccountActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的账户界面 -->
+        <activity
+            android:name=".activity.user.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LivePublisherNewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!-- 发起直播界面 -->
+        <activity
+            android:name=".activity.LivePublisherActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!-- 进入直播界面 -->
+        <activity
+            android:name=".activity.LivePlayerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="com.a99live.zhibo.live.activity.LivePlayerActivity" />
+            </intent-filter>
+        </activity>
+        <!-- 进入录播界面 -->
+        <activity
+            android:name=".activity.VoderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!-- 进入支付界面 -->
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 认证页 -->
+        <activity
+            android:name=".activity.user.Approve"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!-- 认证成功页 -->
+        <activity
+            android:name=".activity.user.ApproveSuccess"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 已认证页 -->
+        <activity
+            android:name=".activity.user.ApproveOver"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 粉丝贡献页 -->
+        <activity
+            android:name=".activity.user.FansContribution"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!-- 我的等级页 -->
+        <activity
+            android:name=".activity.user.MyGradesActivity"
+            android:screenOrientation="portrait" />
+        <!-- 标签页 -->
+        <activity
+            android:name=".activity.LiveTagActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTranslucentTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <!-- 用户资料卡片页 -->
+        <activity
+            android:name=".activity.UserCardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTranslucentTheme" />
+        <!-- 搜索页 -->
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- H5页面 -->
+        <activity
+            android:name=".view.ShowWeb"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!-- 提现记录 -->
+        <activity
+            android:name=".activity.user.WithDrawalRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!-- 提现成功 -->
+        <activity
+            android:name=".activity.user.WithdrawSuccessActivity"
+            android:screenOrientation="portrait" />
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!-- 预约详情页 -->
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!--预约列表-->
+        <activity
+            android:name=".activity.OrderListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!--我的预约李彪-->
+        <activity android:name=".activity.user.MyOrderListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"></activity>
+
+        <!--点击通知的时候调用的广播-->
+        <receiver android:name=".receiver.ClickNotificationReceiver"/>
+
+        <!--IM通信的个人私信功能-->
+        <activity android:name=".activity.imchatc2c.PrivateLetter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            />
+
+        <activity
+            android:name=".activity.imchatc2c.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name=".activity.imchatc2c.ImagePreviewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            />
+
+        <activity android:name=".activity.imchatc2c.ImageViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity android:name=".activity.imchatc2c.ProfileActivity"
+
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity android:name=".activity.imchatc2c.AddFriendActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <!--小视频-->
+        <activity android:name=".activity.xiaovideo.XiaoVideoPlayerActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.xiaovideo.XiaoVideoList"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".activity.xiaovideo.XiaoVideoViewPage"
+            android:screenOrientation="portrait"
+            />
+
+
+        <!-- Umeng分享 -->
+        <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- QQ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105694258" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <!-- 友盟appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57fb08efe0f55ac2830023cd" />
+        <!-- 友盟channel -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2">
+            <intent-filter android:priority="0x7fffffff">
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：网络切换 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <!-- 【可选】 系统广播：开屏 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <!-- 【可选】 usb相关的系统广播，增强信鸽service的复活机会，请根据需要添加 -->
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+
+        <!-- 【必须】 通知service，其中android:name部分要改为当前包名 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 【必须】 请修改为当前APP名包.PUSH_ACTION，如demo的包名为：com.qq.xgdemo -->
+                <action android:name="com.a99live.zhibo.live.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <!-- 已废弃，可删除之；若不删除也不会有任何副作用 -->
+        <!--
+            <service
+            android:name="com.tencent.android.tpush.service.XGDaemonService"
+            android:process=":qq_push_daemon" />
+        -->
+        <!-- 【可选】信鸽拉起其他APP应用，若应用在本地找不到可以自动下载 -->
+        <!--
+              <service
+            android:name="com.tencent.android.tpush.XGDownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        -->
+
+        <receiver
+            android:name=".receiver.MessageReceiver"
+            android:exported="false">
+            <intent-filter>
+
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100238378" />
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A87MZ77IS7KB" />
+
+        <!-- IMSDK -->
+        <!-- 消息收发service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalService"
+            android:exported="false"
+            android:process=":QALSERVICE" />
+        <!-- 消息收发辅助service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalAssistService"
+            android:exported="false"
+            android:process=":QALSERVICE" />
+        <!-- 离线消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.broadcast.qal" />
+            </intent-filter>
+        </receiver>
+        <!-- 系统消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
+            android:process=":QALSERVICE">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!--IM C2C-->
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription"
+    android:layout_marginRight="@dimen/dp_5"
+    android:layout_marginEnd="@dimen/dp_5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:src="@mipmap/head"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35" />
+
+</LinearLayout>

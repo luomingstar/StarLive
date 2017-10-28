@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp_10"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/page"
+        />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="1"
+        android:textStyle="italic|bold"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/text_999"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        />
+
+    <com.a99live.zhibo.live.view.weight.NewCircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fans_head"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:scaleType="centerCrop"
+        app:border_color="#FFF"
+        app:border_width="0dp"
+        android:src="@mipmap/logo_head"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/num"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+    <TextView
+        android:id="@+id/fansname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_222"
+        android:layout_toRightOf="@+id/fans_head"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_alignTop="@+id/fans_head"
+        />
+
+    <TextView
+        android:id="@+id/fansb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="99币"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/text_999"
+        android:layout_toRightOf="@+id/fans_head"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_alignBottom="@+id/fans_head"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fensigongxian_icon_more"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        />
+
+
+
+</RelativeLayout>

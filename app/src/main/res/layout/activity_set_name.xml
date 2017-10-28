@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <com.a99live.zhibo.live.view.weight.NewCircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/login_head"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:scaleType="centerCrop"
+            app:border_color="#FFF"
+            app:border_width="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:src="@mipmap/logo_head"
+            />
+        <!--<com.a99live.zhibo.live.view.weight.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:scaleType="fitCenter"
+            app:riv_border_color="#FFF"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="50dip"
+            app:riv_mutate_background="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:src="@mipmap/logo_head"
+            app:riv_oval="true" />-->
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_37"
+            android:layout_marginLeft="@dimen/dp_44"
+            android:layout_marginRight="@dimen/dp_44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/nickName"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/text_999"/>
+
+            <EditText
+                android:id="@+id/et_nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_27"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/text_999"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_et_name"
+                android:paddingLeft="@dimen/dp_5"
+                android:singleLine="true"
+                android:maxLength="12"
+                android:layout_toRightOf="@id/tv_nick_name"
+                android:layout_marginLeft="@dimen/dp_25.5"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_37"
+            android:layout_marginLeft="@dimen/dp_44"
+            android:layout_marginRight="@dimen/dp_44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sex"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/text_999"/>
+
+            <RadioGroup
+                android:id="@+id/rg_sex"
+                android:layout_toRightOf="@id/tv_sex"
+                android:layout_marginLeft="@dimen/dp_25.5"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_boy"
+                    android:layout_marginLeft="@dimen/dp_38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/boy"
+                    android:textSize="@dimen/sp_16"
+                    android:checked="true"
+                    android:textColor="@color/text_222" />
+
+                <RadioButton
+                    android:id="@+id/rb_girl"
+                    android:layout_marginLeft="@dimen/dp_74"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/girl"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/text_222" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginLeft="@dimen/dp_44"
+            android:layout_marginRight="@dimen/dp_44"
+            android:layout_marginTop="@dimen/dp_78"
+            android:layout_marginBottom="@dimen/dp_42"
+            android:gravity="center"
+            android:text="@string/finish"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/text_5a5b"
+            android:background="@drawable/shape_bt_normal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

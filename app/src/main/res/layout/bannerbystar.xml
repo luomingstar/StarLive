@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/line_gray"
+    >
+
+    <RelativeLayout
+        android:id="@+id/gallery_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_86">
+
+        <com.a99live.zhibo.live.view.weight.banner.GalleryViewPager
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.a99live.zhibo.live.view.weight.banner.GalleryViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dp_5"
+            android:orientation="horizontal"
+            />
+    </RelativeLayout>
+</RelativeLayout>

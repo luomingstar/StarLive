@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/page">
+
+    <include android:id="@+id/layout_title" layout="@layout/title"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请信息提交成功"
+            android:textColor="@color/text_5a5b"
+            android:textSize="@dimen/sp_16"
+            android:paddingTop="@dimen/dp_20"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审核一般在1-3个工作日通过，敬请留意"
+            android:textColor="@color/text_999"
+            android:textSize="@dimen/sp_16"
+            android:paddingTop="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_20"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="认证的优势:"
+            android:textColor="@color/text_999"
+            android:textSize="@dimen/sp_16"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、优先参加平台的大赠送活动"
+            android:textColor="@color/text_999"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="@dimen/dp_10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2、增加上首页的权重，增加直播曝光机会"
+            android:textColor="@color/text_999"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="@dimen/dp_10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3、头像明显标识，能吸引更多粉丝关注"
+            android:textColor="@color/text_999"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="@dimen/dp_10"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

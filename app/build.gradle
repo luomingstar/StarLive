@@ -1,0 +1,147 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        applicationId "com.a99live.zhibo.live"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 14
+        versionName "1.3.7"
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('99live.jks')
+            storePassword '99live.cc'
+            keyAlias '99livekey'
+            keyPassword '99live.cc'
+        }
+        debug {
+            keyAlias '99livekey'
+            keyPassword '99live.cc'
+            storeFile file('C:/android/liveapp/trunk/src/99Live/99live.jks')
+            storePassword '99live.cc'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            // 移除无用的resource文件
+//            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+        debug {
+            minifyEnabled true
+            // 移除无用的resource文件
+//            shrinkResources true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+    }
+    productFlavors {
+
+        yingyongbao {}
+        wandoujia {}
+        baidu {}
+        xiaomi {}
+        qihu360 {}
+        huawei {}
+        oppo {}
+        vivo {}
+        pp {}
+        leshi {}
+        anzhuo {}
+        anzhi {}
+        sanxing {}
+        meizu {}
+        lenovo {}
+        sougou{}
+        pc {}
+        mumayi {}
+        a{}
+        b{}
+        c{}
+        d{}
+
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+
+    }
+
+    lintOptions { // 打包时，也不因为出错中断。
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.0'
+            }
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support:recyclerview-v7:25.3.0'
+    //Butterknife View注解
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //RxJava核心
+    compile 'io.reactivex:rxjava:1.1.0'
+    //RxAndroid
+    compile 'io.reactivex:rxandroid:1.1.0'
+    //Rxlifecycle   RxJava生命周期支持，防止内存溢出
+    compile 'com.trello:rxlifecycle:0.4.0'
+    //Rxlifecycle-components
+    compile 'com.trello:rxlifecycle-components:0.4.0'
+    //OkHttp
+    compile 'com.squareup.okhttp:okhttp:2.7.2'
+    //okio 与OkHttp搭配使用
+    compile 'com.squareup.okio:okio:1.6.0'
+    //Gson json解析工具
+    compile 'com.google.code.gson:gson:2.5'
+    //Glide图片工具
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:design:25.3.0'
+    //GridView
+    compile 'in.srain.cube:grid-view-with-header-footer:1.0.12'
+    //wheelPicker
+    compile 'cn.qqtheme.framework:WheelPicker:latest.release'
+    //弹幕
+    compile 'com.github.ctiao:dfm:0.4.4'
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile files('libs/jg_filter_sdk_1.1.jar')
+    compile files('libs/wup-1.0.0-SNAPSHOT.jar')
+    //地址解析
+    compile 'com.alibaba:fastjson:1.2.19'
+    //友盟
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/multiwindow-v1.3.2.jar')
+    //takephoto
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+    compile files('libs/android-support-v8-renderscript.jar')
+    // 七牛开源视频播放器
+    compile files('libs/pldroid-player-1.5.1.jar')
+    compile 'com.qiniu:happy-dns:0.2.+'
+}

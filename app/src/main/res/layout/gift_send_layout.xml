@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gift_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_gift"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_above="@+id/log"
+        android:background="#CC000000"></android.support.v4.view.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_3"
+        android:layout_above="@id/log"
+        android:layout_below="@id/vp_gift"
+        android:background="#CC000000" />
+
+    <LinearLayout
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:layout_above="@+id/gold"
+        android:background="#CC000000"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#CC000000"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/diamond_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/diamond"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/diamond_num"
+            android:src="@drawable/big_diamond" />
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/diamond"
+            android:text="充值"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingBottom="@dimen/dp_3"
+            android:textColor="@color/text_5a5b"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/send_gift_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/gift_send_bg"
+            android:enabled="false"
+            android:paddingBottom="5dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="5dp"
+            android:text="发送"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/send_continue_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/send_continue"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_centerInParent="true"
+                android:src="@drawable/even_send" />
+
+            <TextView
+                android:id="@+id/send_continue_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="@dimen/dp_20"
+                android:text="30"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

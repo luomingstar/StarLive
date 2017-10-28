@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/page">
+
+    <include android:id="@+id/layout_title" layout="@layout/title"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_balance"
+        android:background="@color/white"
+        android:layout_below="@id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_110">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_33"
+            android:textSize="@dimen/sp_30"
+            android:textColor="@color/text_5a5b"/>
+
+        <RelativeLayout
+            android:layout_below="@id/tv_money"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_balance"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/text_999"/>
+
+            <TextView
+                android:text="@string/diamond"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/text_5a5b"
+                android:layout_toRightOf="@id/tv_balance"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/layout_pay"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout_balance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_63">
+
+        <RadioButton
+            android:id="@+id/weixin_pay"
+            android:layout_width="@dimen/dp_135"
+            android:layout_height="@dimen/dp_33"
+            android:layout_weight="1"
+            android:text="@string/wexinpay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:background="@drawable/shape_account_focus"
+            android:drawableRight="@mipmap/pay_choose"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/alipay"
+            android:layout_width="@dimen/dp_135"
+            android:layout_height="@dimen/dp_33"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_weight="1"
+            android:text="@string/alipay"
+            android:textColor="@color/text_5a5b"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/shape_account"
+            android:drawableRight="@mipmap/pay_choose" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_below="@id/layout_pay"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/page" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_below="@id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_below="@id/view_line"
+            android:paddingBottom="@dimen/dp_33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.a99live.zhibo.live.view.ScrollViewListview
+                android:id="@+id/list_product"
+                android:background="@color/page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_pay_agr"
+                    android:layout_below="@id/list_product"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/rb_pay_agr"
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/dp_11"
+                        android:layout_height="@dimen/dp_11"
+                        android:background="@drawable/select_checkbox"
+                        android:button="@null"
+                        android:checked="true"/>
+
+                    <TextView
+                        android:id="@+id/checktext"
+                        android:layout_toRightOf="@id/rb_pay_agr"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="@string/recharge_agr"
+                        android:textColor="@color/text_999"
+                        android:textSize="@dimen/sp_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

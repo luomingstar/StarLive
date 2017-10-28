@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription"
+    android:layout_width="@dimen/dp_150"
+    android:layout_height="@dimen/dp_34"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:background="@mipmap/live_beijing">
+
+    <ImageView
+        android:id="@+id/head_icon"
+        android:layout_width="@dimen/dp_34"
+        android:layout_height="@dimen/dp_34"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/head" />
+    
+    <RelativeLayout
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/head_icon"
+        android:layout_width="wrap_content"
+        android:paddingRight="@dimen/dp_43"
+        android:layout_height="@dimen/dp_34">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="4"
+            android:maxLines="1"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_look_num"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/line"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_4"
+        android:id="@+id/iv_attention"
+        android:layout_width="@dimen/dp_43"
+        android:layout_height="@dimen/dp_23"
+        android:background="@drawable/attention"/>
+
+
+</RelativeLayout>

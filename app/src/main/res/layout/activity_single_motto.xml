@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_single_motto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/page" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_single_motto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:background="@null"
+            android:gravity="start"
+            android:paddingBottom="@dimen/dp_15"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_15"
+            android:scrollbars="vertical"
+            android:text="1"
+            android:textColor="@color/text_666"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_marginTop="@dimen/dp_13"
+        android:background="@color/page" />
+
+    <TextView
+        android:id="@+id/tv_motto_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="@string/motto_hint"
+        android:textColor="@color/text_999"
+        android:textSize="@dimen/sp_12" />
+
+</LinearLayout>

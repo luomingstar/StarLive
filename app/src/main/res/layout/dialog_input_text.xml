@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_outside_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/rl_inputdlg_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/color_input_dialog_background"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/barrage_area"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/barrage_btn"
+                android:layout_width="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="@dimen/dp_25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@mipmap/barrage_slider_off" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp_0.5"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginStart="@dimen/dp_6"
+            android:background="@color/line"/>
+
+        <EditText
+            android:id="@+id/et_input_message"
+            android:hint="@string/live_send_hint"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:imeActionId="@+id/login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:maxLength="32"
+            android:textColor="@color/text_222"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <!--<View android:layout_width="0.5dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:layout_marginStart="6dp"-->
+            <!--android:background="@color/line"/>-->
+
+        <LinearLayout
+            android:id="@+id/confirm_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/dp_10"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/confrim_btn"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_25"
+                android:background="@drawable/shape_bt_normal"
+                android:textColor="@color/text_5a5b"
+                android:text="@string/send" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

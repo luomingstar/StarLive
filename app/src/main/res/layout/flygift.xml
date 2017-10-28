@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flygiftbg"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        >
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_80"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:scrollHorizontally="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            />
+        
+        <ImageView
+            android:id="@+id/flygiftimg"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_40"
+            android:scaleType="center"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+</RelativeLayout>

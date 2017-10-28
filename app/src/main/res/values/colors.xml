@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translate">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="text_5a5b">#FF5A5B</color>
+    <color name="text_222">#222222</color>
+    <color name="text_444">#444444</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red_theme">#FF5A5B</color>
+    <color name="text_666">#666666</color>
+    <color name="page">#F9F4F5</color>
+    <color name="line_gray">#EFEFEF</color>
+    <color name="golden">#FFDD00</color>
+    <color name="text_999">#999999</color>
+    <color name="gray">#B2A8A1</color>
+    <color name="item_pressed">#33cecece</color>
+    <color name="bg_page">#EBEBEB</color>
+    <color name="line">#E1E1E1</color>
+    <color name="text_8a8d">#BE8A8D</color>
+    <color name="bck_small">#eee</color>
+    <color name="bck_middle">#e5e5e5</color>
+    <color name="bck_high">#ccc</color>
+    <color name="driver_color">#d5d5d5</color>
+    <color name="text_ff9c00">#ff9c00</color>
+    <color name="text_42c700">#42c700</color>
+    <color name="text_f9f4f5">#f9f4f5</color>
+    <color name="text_normal">#9b8687</color>
+    <color name="edit_search">#ffdede</color>
+    <color name="search_hint">#ff9191</color>
+    <color name="note">#ffd8d8</color>
+
+    <color name="colorSendName">#9966cc</color>
+    <color name="colorSendName1">#FF3163</color>
+    <color name="colorSendName2">#973365</color>
+    <color name="colorSendName3">#006599</color>
+    <color name="colorSendName4">#D07E44</color>
+    <color name="colorSendName5">#97BC87</color>
+    <color name="colorSendName6">#FFAE1F</color>
+    <color name="colorSendName7">#FF437D</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_input_dialog_background">#b4ffffff</color>
+    <color name="colorDarkTransparentGray">#a4000000</color>
+    <color name="colorDanmuMsg">#30e7d5</color>
+    <color name="light_white">#d3d3d3</color>
+    <color name="light_black">#1A000000</color>
+    <color name="mid_black">#80000000</color>
+    <color name="hight_black">#FF000000</color>
+    <color name="shadow">#cc222222</color>
+
+
+    <color name="color1">#ffffff</color>
+    <color name="color2">#ff5a5b</color>
+    <color name="color3">#2558f2</color>
+    <color name="color4">#000000</color>
+    
+    <color name="purple">#da769f</color>
+    <color name="sky_blue">#56c6db</color>
+    <color name="yellow">#f2bf58</color>
+    <color name="green">#59b431</color>
+
+    <color name="tag_life">#65c8ab</color>
+    <color name="tag_sing">#a499e9</color>
+    <color name="tag_quyi">#e999b3</color>
+    <color name="tag_dance">#abcc5c</color>
+
+    <color name="light_red">#fc7d23</color>
+    <color name="mid_red">#ee6911</color>
+
+    <color name="mid_white">#80ffffff</color>
+
+    <color name="mengban_red">#80ff5a5b</color>
+
+    <color name="order_count_down">#fff000</color>
+
+    <color name="color333">#333333</color>
+    <color name="colorf8f5f6">#f8f5f6</color>
+    <color name="text_blue1">#1173CB</color>
+    <color name="text_gray1">#777777</color>
+    <color name="background_gray1">#EBEBEB</color>
+    <color name="line_btn">#BBBBBB</color>
+    <color name="background_gray3">#D4D4D4</color>
+    <color name="text_gray2">#767676</color>
+    <color name="btn_red_hover">#E8484B</color>
+    <color name="btn_red">#D63F41</color>
+
+
+    <color name="btn_blue">#0F73CB</color>
+    <color name="btn_blue_hover">#1E86E4</color>
+    <color name="color_f1f1f1">#f1f1f1</color>
+    <color name="color_777777">#777777</color>
+    <color name="color_ff535e">#ff535e</color>
+
+</resources>

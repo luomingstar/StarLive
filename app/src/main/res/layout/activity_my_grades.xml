@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/layout_title" layout="@layout/title"/>
+
+    <RelativeLayout
+        android:background="@drawable/shape_grades_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_235">
+
+        <com.a99live.zhibo.live.view.weight.NewCircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_head"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_width="@dimen/dp_94"
+            android:layout_height="@dimen/dp_94"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            app:border_color="#80FFFfff"
+            app:border_width="4dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_layout_head"
+            android:layout_marginTop="@dimen/dp_98"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_grades_detail"
+                android:textColor="@color/text_5a5b"
+                android:textSize="@dimen/sp_15"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_45"
+                android:paddingRight="@dimen/dp_45"
+                android:background="@drawable/my_grades_head"
+                android:ellipsize="marquee"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_my_grades_detail"
+            android:layout_below="@id/rl_layout_head"
+            android:layout_marginTop="@dimen/dp_22"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_marginRight="@dimen/dp_22"
+            android:layout_below="@id/tv_my_grades_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_grades_now"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_grades_next"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/white"/>
+            
+            <com.a99live.zhibo.live.view.weight.MyLevelSeekBar
+                android:id="@+id/seekBar_grades"
+                android:layout_toRightOf="@id/tv_grades_now"
+                android:layout_toLeftOf="@id/tv_grades_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_10"
+                android:maxHeight="@dimen/dp_10"
+                android:thumb="@drawable/seekbar_thumb"
+                android:thumbOffset="0dp"
+                android:progressDrawable="@drawable/seekbar_background"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/page"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/grades_privilege"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="@string/grades_privilege"
+            android:textColor="@color/text_222"
+            android:textSize="@dimen/sp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_layout_ranking"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_ranking"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:background="@drawable/grades_ranking"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/iv_ranking"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/ranking"
+                android:textColor="@color/text_222"
+                android:textSize="@dimen/sp_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_34"
+            android:layout_toRightOf="@id/rl_layout_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_approach"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:background="@drawable/grades_approach"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_below="@id/iv_approach"
+                android:text="@string/approch"
+                android:textColor="@color/text_222"
+                android:textSize="@dimen/sp_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

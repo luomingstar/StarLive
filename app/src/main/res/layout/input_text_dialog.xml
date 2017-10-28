@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_inputdlg_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="280dp"
+            android:layout_centerVertical="true"
+            android:layout_height="35dp"
+            android:background="@drawable/shape_input"
+            android:gravity="left|center"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:hint="@string/live_send_hint"
+            android:text=""
+            android:textColor="@color/text_222"
+            android:imeOptions="actionSend"
+            android:focusable="true"
+            android:maxLength="32"
+            android:focusableInTouchMode="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/confrim_btn"
+            android:layout_width="50dp"
+            android:layout_toRightOf="@id/input_message"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_get_code"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textSize="16sp"
+            android:textColor="@color/text_5a5b"/>
+    </RelativeLayout>
+
+</RelativeLayout>

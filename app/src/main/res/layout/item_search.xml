@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:background="@color/page"
+    android:id="@+id/rl_layout_search_item">
+
+    <com.a99live.zhibo.live.view.weight.NewCircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_search_head"
+        android:layout_width="@dimen/dp_34"
+        android:layout_height="@dimen/dp_34"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/head_logo"
+        android:scaleType="centerCrop"
+        app:border_color="#FFF"
+        app:border_width="0dp" />
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_search_head"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/iv_search_attention"
+        >
+
+        <!--<RelativeLayout
+            android:id="@+id/ll_user_info"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >-->
+
+            <TextView
+                android:id="@+id/tv_search_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:paddingRight="@dimen/dp_20"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/text_222"/>
+
+            <ImageView
+                android:id="@+id/iv_search_sex"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_alignRight="@+id/tv_search_name"
+                android:layout_marginTop="@dimen/dp_3.5"
+                android:background="@drawable/card_boy"/>
+
+        <!--</RelativeLayout>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_search_rank"-->
+            <!--android:layout_marginLeft="@dimen/dp_5"-->
+            <!--android:layout_toRightOf="@id/iv_search_sex"-->
+            <!--android:layout_width="@dimen/dp_34"-->
+            <!--android:layout_height="@dimen/dp_15"-->
+            <!--android:layout_alignTop="@id/tv_search_name"-->
+            <!--android:background="@drawable/card_rank"/>-->
+
+        <TextView
+            android:layout_below="@+id/tv_search_name"
+            android:layout_marginTop="@dimen/dp_3"
+            android:id="@+id/tv_search_sigle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/text_999"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_search_attention"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_width="@dimen/dp_23"
+        android:layout_height="@dimen/dp_23"
+        android:background="@drawable/search_unfollow"/>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line_gray"/>
+
+</RelativeLayout>

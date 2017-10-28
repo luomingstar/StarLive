@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_level"
+            android:layout_gravity="center_vertical|top"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:background="@drawable/card_rank"
+            android:visibility="gone"
+            android:layout_width="@dimen/dp_27"
+            android:layout_height="@dimen/dp_14" />
+
+        <TextView
+            android:id="@+id/sendcontext"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/text_222"
+            android:shadowDy="2"
+            android:shadowDx="1.5"
+            android:shadowRadius="1"
+            android:paddingRight="7dp"
+            android:paddingBottom="@dimen/dp_1" />
+
+        <!--android:background="@drawable/message_background"-->
+</LinearLayout>

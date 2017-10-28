@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hide_soft_key"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/page">
+
+    <include android:id="@+id/layout_title" layout="@layout/title"/>
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:hint="请输入您的真实姓名"
+        android:textColorHint="@color/text_999"
+        android:textSize="@dimen/sp_16"
+        android:padding="@dimen/dp_10"
+        android:maxLines="1"
+        />
+    <EditText
+        android:id="@+id/id_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@+id/name"
+        android:background="@color/white"
+        android:hint="请输入您的身份证号"
+        android:textColorHint="@color/text_999"
+        android:textSize="@dimen/sp_16"
+        android:padding="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_1"
+        android:maxLines="1"
+        android:maxLength="18"
+        />
+
+    <LinearLayout
+        android:id="@+id/approve_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/id_card"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dp_10"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/approve_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_124"
+                    android:src="@drawable/approve_bg"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageView
+                    android:id="@+id/camare_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/renzheng_zhaoxiangji_icon"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手持身份证上传"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/sp_16"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:maxLines="1"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_124"
+                android:src="@drawable/approve_demo"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_10"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手持身份证示例样图"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/sp_16"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:maxLines="1"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/upload_approve"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_below="@+id/approve_icon"
+        android:layout_marginTop="@dimen/dp_55"
+        android:text="提交认证"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/selector_approve_bg"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        />
+
+
+</RelativeLayout>
